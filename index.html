@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UD. Hello Silvi &mdash; Produsen Sandal Spon Berkualitas Gempol Pasuruan</title>
+<meta name="description" content="UD. Hello Silvi adalah produsen alas kaki sandal spon berbasis di Gempol, Pasuruan. Mengedepankan ketelitian pengrajin lokal, daya tahan material pilihan, dan pemenuhan kebutuhan grosir skala besar.">
+
+<!-- Google Fonts: Poppins & Nunito Sans (Font Asli Template) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Nunito+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link href="assets/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link href="assets/style.css" rel="stylesheet" />
+<link rel="icon" type="image/x-icon" href="assets/hand-heart.png">
+
+<style>
+  :root {
+    --compass-black: #111111;
+    --compass-dark: #1f1f1f;
+    --compass-gray: #666666;
+    --compass-light-gray: #f7f7f7;
+    --compass-border: #e2e8f0;
+    --compass-red: #dc2626;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Nunito Sans', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: var(--compass-black);
+    background-color: #ffffff;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+
+  /* Announcement Bar Top */
+  .announcement-bar {
+    background: var(--compass-black);
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 8px 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  /* Minimalist Navbar ala Sepatu Compass */
+  .navbar-hw {
+    background: rgba(255, 255, 255, 0.96) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--compass-border);
+    padding: 16px 0;
+  }
+  .navbar-hw.scrolled {
+    background: #ffffff !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  }
+  .brand-logo-text {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: clamp(1.45rem, 2vw, 1.75rem);
+    letter-spacing: -0.02em;
+    color: var(--compass-black);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.2;
+    text-decoration: none;
+  }
+  .footer-compass .brand-logo-text,
+  .brand-logo-text.text-white {
+    color: #ffffff !important;
+  }
+  .brand-logo-badge {
+    background: var(--compass-black);
+    color: #fff;
+    font-size: 0.7rem;
+    padding: 2px 7px;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+  section[id], header[id] {
+    scroll-margin-top: 85px;
+  }
+
+  .nav-hw .nav-link {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #4b5563 !important;
+    padding: 6px 14px !important;
+    transition: color 0.2s ease;
+    text-decoration: none !important;
+    position: relative;
+  }
+  .nav-hw .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 12px;
+    right: 12px;
+    height: 2.5px;
+    background-color: var(--compass-black);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .nav-hw .nav-link:hover::after, 
+  .nav-hw .nav-link.active::after {
+    transform: scaleX(1);
+  }
+  .nav-hw .nav-link:hover, 
+  .nav-hw .nav-link.active {
+    color: var(--compass-black) !important;
+  }
+  .btn-compass-black {
+    background: var(--compass-black);
+    color: #ffffff !important;
+    border: 1px solid var(--compass-black);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 10px 22px;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-compass-black:hover {
+    background: #ffffff;
+    color: var(--compass-black) !important;
+  }
+  .btn-compass-outline {
+    background: transparent;
+    color: var(--compass-black) !important;
+    border: 1px solid var(--compass-black);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 10px 22px;
+    border-radius: 6px;
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-compass-outline:hover {
+    background: var(--compass-black);
+    color: #ffffff !important;
+  }
+
+  /* Hero Section ala Lookbook Editorial */
+  .hero-compass {
+    position: relative;
+    padding: 80px 0 65px;
+    background: #f8fafc;
+    border-bottom: 1px solid var(--compass-border);
+  }
+  .tagline-eyebrow {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--compass-red);
+    margin-bottom: 14px;
+  }
+  .hero-heading {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    line-height: 1.15;
+    font-weight: 800;
+    color: var(--compass-black);
+    margin-bottom: 22px;
+  }
+  .hero-heading-accent {
+    position: relative;
+    display: inline-block;
+    color: #0f7a37;
+  }
+  .hero-heading-accent svg {
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 14px;
+  }
+  .hero-description {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #4b5563;
+    max-width: 540px;
+    margin-bottom: 30px;
+  }
+  .hero-editorial-img {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #e2e8f0;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  }
+  .hero-editorial-img img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    filter: contrast(102%);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .hero-editorial-img:hover img {
+    transform: scale(1.03);
+  }
+  .floating-editorial-tag {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(17, 17, 17, 0.9);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+  }
+
+  /* Marquee Ticker ala Streetwear Footwear */
+  .marquee-ticker {
+    background: var(--compass-black);
+    color: #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 12px 0;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .marquee-content {
+    display: inline-block;
+    animation: marquee 25s linear infinite;
+  }
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* Editorial Story History Items (Sesuai Desain Ilustrasi Cerita) */
+  .story-item {
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--compass-border);
+  }
+  .story-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .story-image-wrap {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #f1f5f9;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.05);
+    margin-bottom: 24px;
+  }
+  .story-image-wrap img {
+    width: 100%;
+    height: auto;
+    max-height: 520px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+  }
+  .story-item:hover .story-image-wrap img {
+    transform: scale(1.02);
+  }
+  .story-year {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--compass-black);
+    margin-bottom: 6px;
+  }
+  .story-title {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+    color: var(--compass-black);
+    line-height: 1.25;
+  }
+  .story-desc {
+    font-family: var(--font-body);
+    font-size: 1.02rem;
+    line-height: 1.75;
+    color: #4b5563;
+  }
+
+  /* Visi & Misi Usaha (Enlarged Editorial Cards) */
+  .vm-section-wrap {
+    margin-top: 50px;
+    padding-top: 50px;
+    border-top: 1px solid var(--compass-border);
+  }
+  .vm-card {
+    border-radius: 12px;
+    padding: 38px 34px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
+  }
+  .vm-card-vision,
+  .vm-card-mission {
+    background: #ffffff;
+    color: var(--compass-black);
+    border: 1px solid var(--compass-border);
+  }
+  .vm-card-vision:hover,
+  .vm-card-mission:hover {
+    border-color: var(--compass-black);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+  }
+  .vm-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 22px;
+  }
+  .vm-label-tag {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    letter-spacing: 0.02em;
+    color: var(--compass-red);
+  }
+  .vm-badge-pill {
+    font-family: var(--font-heading);
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 999px;
+    background: #f1f5f9;
+    color: #475569;
+  }
+  .vm-quote {
+    font-family: var(--font-heading);
+    font-size: clamp(1.25rem, 2.3vw, 1.6rem);
+    font-weight: 700;
+    line-height: 1.45;
+    margin-bottom: 24px;
+    color: var(--compass-black);
+  }
+  .vm-footer-note {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    line-height: 1.65;
+    margin-top: auto;
+    color: #64748b;
+  }
+
+  /* Product Cards ala Sepatu Compass E-Commerce */
+  .compass-product-card {
+    background: #ffffff;
+    border: 1px solid var(--compass-border);
+    border-radius: 10px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: hidden;
+  }
+  .compass-product-card:hover {
+    border-color: var(--compass-black);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+  }
+  .product-image-box {
+    background: #f1f5f9;
+    position: relative;
+    overflow: hidden;
+    padding-top: 85%;
+  }
+  .product-image-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  .compass-product-card:hover .product-image-box img {
+    transform: scale(1.05);
+  }
+  .product-badge-corner {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: var(--compass-black);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+    z-index: 2;
+  }
+  .product-content-box {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+  }
+  .product-title-text {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: var(--compass-black);
+    margin-bottom: 6px;
+  }
+  .product-spec-text {
+    font-size: 0.85rem;
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+
+  /* Blueprint & BOM Industrial Card */
+  .blueprint-card {
+    background: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #1e293b;
+    border-radius: 12px;
+    padding: 34px;
+    position: relative;
+  }
+  .blueprint-table th {
+    background: #1e293b;
+    color: #94a3b8;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .blueprint-table td {
+    color: #e2e8f0;
+    font-size: 0.88rem;
+    border-color: #334155;
+  }
+
+  /* Interactive Kodi Calculator */
+  .calculator-box {
+    background: #ffffff;
+    border: 1px solid var(--compass-border);
+    padding: 38px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.04);
+  }
+
+  /* Team & Craftspeople Cards */
+  .maker-card {
+    border: 1px solid var(--compass-border);
+    border-radius: 10px;
+    background: #fff;
+    overflow: hidden;
+    transition: all 0.25s ease;
+  }
+  .maker-card:hover {
+    border-color: var(--compass-black);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  }
+
+  /* Footer Minimalis Brutalist ala Compass */
+  .footer-compass {
+    background: var(--compass-black);
+    color: #ffffff;
+    padding: 70px 0 30px;
+    border-top: 1px solid #262626;
+  }
+  .footer-compass a {
+    color: #9ca3af;
+    transition: color 0.2s ease;
+  }
+  .footer-compass a:hover {
+    color: #ffffff;
+  }
+</style>
+</head>
+<body>
+
+<!-- Announcement Top Ticker -->
+<div class="announcement-bar">
+  <span><i class="bi bi-box-seam me-2"></i> Pusat Produksi Sandal Spon Pasuruan &bull; Melayani Pemesanan Grosir Partai Besar (Per Kodi) ke Seluruh Daerah</span>
+</div>
+
+<!-- ============================================
+     PRELOADER
+============================================ -->
+<div id="preloader" aria-hidden="true">
+  <div class="preload-ring"><i class="bi bi-layers preload-heart" style="color:var(--compass-black);"></i></div>
+  <div class="preload-text" style="font-weight:700; font-family:var(--font-heading);">UD. Hello Silvi &mdash; Est. 2007</div>
+</div>
+
+<!-- ============================================
+     NAVBAR
+============================================ -->
+<nav class="navbar navbar-expand-lg navbar-hw sticky-top" id="mainNav">
+  <div class="container">
+    <a class="brand-logo-text" href="#home">
+      UD. Hello Silvi
+    </a>
+    
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Toggle navigation">
+      <i class="bi bi-list fs-2 text-dark"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav nav-hw mx-auto mt-3 mt-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#home">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Tentang Kami</a></li>
+        <li class="nav-item"><a class="nav-link" href="#products">Produk</a></li>
+        <li class="nav-item"><a class="nav-link" href="#produksi">Proses Produksi</a></li>
+        <li class="nav-item"><a class="nav-link" href="#makers">Struktur Tim</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+      </ul>
+      <a href="https://wa.me/6281234567890?text=Halo%20UD.%20Hello%20Silvi,%20saya%20ingin%20menanyakan%20produk%20sandal%20spon" target="_blank" rel="noopener noreferrer" class="btn-compass-black d-none d-lg-inline-flex">
+        <span>Hubungi Kami</span> <i class="bi bi-arrow-up-right"></i>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================
+     HERO SECTION
+============================================ -->
+<header class="hero-compass" id="home">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="tagline-eyebrow">Berdiri Sejak 2007 &bull; Gempol, Pasuruan</span>
+        <h1 class="hero-heading">Langkah nyaman,<br>mutu pilihan,<br><span class="hero-heading-accent">karya lokal.<svg viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 10 Q 50 2 100 8 T 198 6" fill="none" stroke="#f59e0b" stroke-width="5" stroke-linecap="round"/></svg></span></h1>
+        <p class="hero-description">
+          Dilahirkan dari ketekunan pengrajin di Dusun Karang Bangkal, <strong>UD. Hello Silvi</strong> mendedikasikan lebih dari 15 tahun keahlian memproduksi alas kaki sandal spon pilihan dengan kombinasi ketebalan material presisi, jahitan tali webbing kokoh, dan kenyamanan di setiap pijakan.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#about" class="btn-compass-black">
+            <span>Tentang Kami</span> <i class="bi bi-arrow-right"></i>
+          </a>
+          <a href="#products" class="btn-compass-outline">
+            <span>Produk Kami</span> <i class="bi bi-grid"></i>
+          </a>
+        </div>
+        <div class="mt-5 pt-4 border-top d-flex gap-5">
+          <div>
+            <div class="fw-bold font-display fs-4">2007</div>
+            <div class="text-muted small">Tahun Berdiri</div>
+          </div>
+          <div>
+            <div class="fw-bold font-display fs-4">836+</div>
+            <div class="text-muted small">Kodi Terdata</div>
+          </div>
+          <div>
+            <div class="fw-bold font-display fs-4">100%</div>
+            <div class="text-muted small">Tangan Pengrajin</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+        <div class="hero-editorial-img">
+          <img src="assets/CERITA/sandal11.jpg" alt="UD Hello Silvi Footwear Craftsmanship">
+          <div class="floating-editorial-tag">
+            <div class="fw-bold">Industri Alas Kaki Gempol</div>
+            <div class="small opacity-75">Kenyamanan Spon EVA Teruji</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Ticker Bar -->
+<div class="marquee-ticker">
+  <div class="marquee-content">
+    UD. Hello Silvi &bull; Diproduksi di Gempol Pasuruan &bull; Seri Sandal Kitty Classic &bull; Spon EVA 10mm &amp; 7mm &bull; Tali Webbing Halus &amp; Kuat &bull; Jaringan Mitra Malang, Surabaya &amp; Jatim &bull; Kualitas Langsung dari Tangan Pengrajin &bull; 
+    UD. Hello Silvi &bull; Diproduksi di Gempol Pasuruan &bull; Seri Sandal Kitty Classic &bull; Spon EVA 10mm &amp; 7mm &bull; Tali Webbing Halus &amp; Kuat &bull; Jaringan Mitra Malang, Surabaya &amp; Jatim &bull;
+  </div>
+</div>
+
+<!-- ============================================
+     THE STORY & MANIFESTO (ABOUT)
+============================================ -->
+<section class="py-5 bg-white" id="about" style="padding-top:80px !important; padding-bottom:80px !important;">
+  <div class="container">
+    
+    <!-- Header Sejarah & Profil -->
+    <div class="row g-5 align-items-center mb-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="editorial-subtitle">01 - Sejarah &amp; Dedikasi</span>
+        <h2 class="editorial-section-title mt-2 mb-3">Dari Dusun Karang Bangkal untuk Langkah Indonesia</h2>
+        <p class="fs-5 text-dark mb-0" style="line-height:1.7;">
+          Berakar di Dusun Karang Bangkal RT.02 RW.04 Desa Karangrejo, Kecamatan Gempol, Kabupaten Pasuruan, UD. Hello Silvi mengawali perjalanannya pada tahun 2007 dengan tenaga kerja 2 hingga 3 pengrajin.
+        </p>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left">
+        <div class="p-4 border bg-light rounded-3">
+          <div class="fst-italic text-secondary mb-3">
+            "Kami merintis usaha ini dengan niat sederhana: menyediakan alas kaki yang tidak hanya terjangkau, tetapi benar-benar nyaman, empuk, dan awet di setiap langkah pemakainya."
+          </div>
+          <div class="fw-bold font-display">&mdash; Mashudi Prasetiyo</div>
+          <div class="small text-muted">Pemilik Usaha UD. Hello Silvi</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 Poin Perjalanan Sejarah (Format Editorial Card Bergambar) -->
+    <div class="story-history-wrapper my-5">
+      
+      <!-- Poin 1 (2007 - 2010) -->
+      <div class="story-item" data-aos="fade-up">
+        <div class="story-image-wrap">
+          <img src="assets/CERITA/ilus1.png" alt="Masa Perintisan Awal UD. Hello Silvi" loading="lazy">
+        </div>
+        <div class="row g-4 align-items-center">
+          <div class="col-md-5">
+            <div class="story-year">Tahun 2007 &ndash; 2010</div>
+            <h3 class="story-title">Masa Perintisan Awal</h3>
+          </div>
+          <div class="col-md-7">
+            <p class="story-desc mb-0">
+              Merintis industri rumahan dari Dusun Karang Bangkal dengan 2 sampai 3 orang karyawan dan mulai memperkenalkan produk sandal spon ke pasar lokal.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Poin 2 (2010 - 2013) -->
+      <div class="story-item" data-aos="fade-up">
+        <div class="story-image-wrap">
+          <img src="assets/CERITA/ilus2.png" alt="Ekspansi Kemitraan Kota Malang" loading="lazy">
+        </div>
+        <div class="row g-4 align-items-center">
+          <div class="col-md-5">
+            <div class="story-year">Tahun 2010 &ndash; 2013</div>
+            <h3 class="story-title">Ekspansi Kemitraan Kota Malang</h3>
+          </div>
+          <div class="col-md-7">
+            <p class="story-desc mb-0">
+              Konsistensi mutu produk membuka kerja sama suplai pertama dengan mitra pemasok dan distributor dari Kota Malang untuk memperluas jangkauan pasar.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Poin 3 (2013 - 2015) -->
+      <div class="story-item" data-aos="fade-up">
+        <div class="story-image-wrap">
+          <img src="assets/CERITA/ilus3.png" alt="Lonjakan Permintaan dan Penambahan Karyawan" loading="lazy">
+        </div>
+        <div class="row g-4 align-items-center">
+          <div class="col-md-5">
+            <div class="story-year">Tahun 2013 &ndash; 2015</div>
+            <h3 class="story-title">Lonjakan Permintaan &amp; Penambahan Karyawan</h3>
+          </div>
+          <div class="col-md-7">
+            <p class="story-desc mb-0">
+              Permintaan pelanggan grosir yang meningkat tajam mendorong perekrutan tenaga kerja lokal tambahan guna memperbanyak kapasitas produksi sandal.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Poin 4 (2016 - Sekarang) -->
+      <div class="story-item" data-aos="fade-up">
+        <div class="story-image-wrap">
+          <img src="assets/CERITA/ilus4.png" alt="Peresmian Nama UD. Hello Silvi" loading="lazy">
+        </div>
+        <div class="row g-4 align-items-center">
+          <div class="col-md-5">
+            <div class="story-year">Tahun 2016 &ndash; Sekarang</div>
+            <h3 class="story-title">Peresmian Nama UD. Hello Silvi &amp; Jalur Logistik Strategis</h3>
+          </div>
+          <div class="col-md-7">
+            <p class="story-desc mb-0">
+              Diakui resmi sebagai <strong>UD. Hello Silvi</strong> dengan variasi model sandal yang beragam dan didukung letak strategis di perlintasan jalur utama Gempol untuk kelancaran suplai logistik bahan baku serta distribusi produk jadi.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Visi & Misi Usaha (Enlarged Editorial Cards) -->
+    <div class="row g-4 vm-section-wrap">
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="vm-card vm-card-vision">
+          <div>
+            <div class="vm-header">
+              <span class="vm-label-tag">
+                <i class="bi bi-compass-fill"></i> Visi Perusahaan
+              </span>
+              <span class="vm-badge-pill">Cita-Cita Utama</span>
+            </div>
+            <p class="vm-quote">
+              &ldquo;Menjadi salah satu produsen sandal spon dengan kualitas terbaik yang berdaya saing tinggi hingga skala nasional dan internasional.&rdquo;
+            </p>
+          </div>
+          <div class="vm-footer-note pt-3 border-top">
+            Fokus berkelanjutan pada durabilitas material EVA spon, presisi pemotongan pola pisau press, dan standar manufaktur alas kaki Indonesia.
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="vm-card vm-card-mission">
+          <div>
+            <div class="vm-header">
+              <span class="vm-label-tag">
+                <i class="bi bi-bullseye"></i> Misi Perusahaan
+              </span>
+              <span class="vm-badge-pill">Komitmen Mutu</span>
+            </div>
+            <p class="vm-quote">
+              &ldquo;Menghadirkan berbagai pilihan model, warna, dan dimensi alas kaki bermutu tinggi dengan harga terjangkau bagi seluruh lapisan masyarakat.&rdquo;
+            </p>
+          </div>
+          <div class="vm-footer-note pt-3 border-top">
+            Mewujudkan akses produk alas kaki nyaman dan tahan lama untuk pasar retail maupun mitra grosir di seluruh nusantara.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================
+     PRODUCT LINEUP (GRID STYLE)
+============================================ -->
+<section class="py-5" id="products" style="background:#f8fafc; padding-top:80px !important; padding-bottom:80px !important; border-top:1px solid var(--compass-border); border-bottom:1px solid var(--compass-border);">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-end mb-5" data-aos="fade-up">
+      <div>
+        <span class="editorial-subtitle">02 - Katalog Produk</span>
+        <h2 class="editorial-section-title mt-2">Pilihan Seri Sandal Spon</h2>
+      </div>
+      <div>
+        <span class="text-muted small">Tersedia Pemesanan Partai &bull; Minimal 1 Kodi (20 Pasang)</span>
+      </div>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Produk 1 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up">
+        <div class="compass-product-card">
+          <div class="product-image-box">
+            <span class="product-badge-corner" style="background:var(--compass-red);">Produk Terlaris</span>
+            <img src="assets/CERITA/sandal1.webp" alt="Sandal Spon Merk Kitty">
+          </div>
+          <div class="product-content-box">
+            <div>
+              <div class="small text-muted mb-1">Seri Studi Kasus Operasional</div>
+              <h3 class="product-title-text">Sandal Spon "Kitty"</h3>
+              <p class="product-spec-text">
+                Kombinasi klasik spon warna 10mm untuk bantalan atas empuk dan sol spon hitam 7mm berdensitas tinggi. Tali webbing teranyam 0.8m dengan label merk orisinal.
+              </p>
+            </div>
+            <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+              <div>
+                <span class="small text-muted d-block" style="font-size:0.75rem;">Estimasi Harga</span>
+                <span class="fw-bold font-display">Harga Grosir</span>
+              </div>
+              <a href="https://wa.me/6281234567890?text=Halo%20UD.%20Hello%20Silvi,%20saya%20tertarik%20dengan%20Sandal%20Spon%20Merk%20Kitty" target="_blank" class="btn-compass-black py-2 px-3" style="font-size:0.8rem;">
+                Pesan <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produk 2 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="compass-product-card">
+          <div class="product-image-box">
+            <span class="product-badge-corner">Kasual Santai</span>
+            <img src="assets/CERITA/sandal11.jpg" alt="Sandal Spon Kasual Pria">
+          </div>
+          <div class="product-content-box">
+            <div>
+              <div class="small text-muted mb-1">Dewasa &bull; Kasual Pria</div>
+              <h3 class="product-title-text">Kasual Monochrome</h3>
+              <p class="product-spec-text">
+                Dirancang untuk mobilitas pria harian. Warna netral hitam-abu dengan traksi sol berpola anti-licin dan ketahanan aus yang lebih tinggi.
+              </p>
+            </div>
+            <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+              <div>
+                <span class="small text-muted d-block" style="font-size:0.75rem;">Rentang Ukuran</span>
+                <span class="fw-bold font-display">Nomor 38 - 43</span>
+              </div>
+              <a href="https://wa.me/6281234567890?text=Halo%20UD.%20Hello%20Silvi,%20saya%20tertarik%20dengan%20Sandal%20Kasual%20Monochrome" target="_blank" class="btn-compass-black py-2 px-3" style="font-size:0.8rem;">
+                Pesan <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Produk 3 -->
+      <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="compass-product-card">
+          <div class="product-image-box">
+            <span class="product-badge-corner">Edisi Anak</span>
+            <img src="assets/CERITA/Sandal2.jpg" alt="Sandal Spon Anak">
+          </div>
+          <div class="product-content-box">
+            <div>
+              <div class="small text-muted mb-1">Anak-anak &bull; Warna Warni</div>
+              <h3 class="product-title-text">Junior Play Series</h3>
+              <p class="product-spec-text">
+                Kombinasi warna ceria dengan sablon halus yang tidak mudah terkelupas. Sangat ringan dan lentur, menjaga kaki anak tetap nyaman bermain.
+              </p>
+            </div>
+            <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+              <div>
+                <span class="small text-muted d-block" style="font-size:0.75rem;">Rentang Ukuran</span>
+                <span class="fw-bold font-display">Nomor 28 - 35</span>
+              </div>
+              <a href="https://wa.me/6281234567890?text=Halo%20UD.%20Hello%20Silvi,%20saya%20tertarik%20dengan%20Sandal%20Junior%20Play" target="_blank" class="btn-compass-black py-2 px-3" style="font-size:0.8rem;">
+                Pesan <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     GAMBARAN PROSES & FASILITAS PRODUKSI
+============================================ -->
+<section class="py-5 bg-white" id="produksi" style="padding-top:80px !important; padding-bottom:80px !important;">
+  <div class="container">
+    <div class="row g-5 align-items-stretch">
+      <div class="col-lg-6" data-aos="fade-right">
+        <span class="editorial-subtitle">03 - Operasional Usaha</span>
+        <h2 class="editorial-section-title mt-2 mb-4">Gambaran Proses Pembuatan Sandal Spon</h2>
+        <p class="text-secondary" style="font-size: 1.1rem; line-height: 1.85;">
+          Kegiatan produksi di bengkel UD. Hello Silvi mengandalkan sinergi antara keterampilan tangan pengrajin berpengalaman dan peralatan cetak presisi. Setiap tahapan diawasi secara langsung oleh penanggung jawab produksi guna memastikan kualitas mutu sandal yang konsisten.
+        </p>
+
+        <!-- 4 Tahap Produksi Naratif -->
+        <div class="mt-4 pt-2">
+          <div class="d-flex gap-3 mb-4 pb-3 border-bottom">
+            <span class="fw-bold font-display text-dark" style="font-size: 1.5rem; min-width: 38px;">01</span>
+            <div>
+              <div class="fw-bold font-display text-dark" style="font-size: 1.08rem; margin-bottom: 3px;">Penerimaan &amp; Pemilihan Bahan Baku</div>
+              <div class="text-muted" style="font-size: 0.96rem; line-height: 1.65;">Pemeriksaan kualitas lembaran spon warna, spon hitam dasar, lem perekat khusus, dan tali webbing yang lentur.</div>
+            </div>
+          </div>
+          <div class="d-flex gap-3 mb-4 pb-3 border-bottom">
+            <span class="fw-bold font-display text-dark" style="font-size: 1.5rem; min-width: 38px;">02</span>
+            <div>
+              <div class="fw-bold font-display text-dark" style="font-size: 1.08rem; margin-bottom: 3px;">Pemotongan Pola &amp; Penjahitan Tali</div>
+              <div class="text-muted" style="font-size: 0.96rem; line-height: 1.65;">Pencetakan lembaran spon menggunakan pisau press sesuai nomor sandal, dilanjutkan dengan penjahitan tali webbing yang kuat dan rapi.</div>
+            </div>
+          </div>
+          <div class="d-flex gap-3 mb-4 pb-3 border-bottom">
+            <span class="fw-bold font-display text-dark" style="font-size: 1.5rem; min-width: 38px;">03</span>
+            <div>
+              <div class="fw-bold font-display text-dark" style="font-size: 1.08rem; margin-bottom: 3px;">Perakitan &amp; Pengeleman (Assembly)</div>
+              <div class="text-muted" style="font-size: 0.96rem; line-height: 1.65;">Penyatuan lapisan spon atas yang empuk dengan spon alas dasar anti-selip, pemasangan tali webbing, dan penempelan label merk.</div>
+            </div>
+          </div>
+          <div class="d-flex gap-3">
+            <span class="fw-bold font-display text-dark" style="font-size: 1.5rem; min-width: 38px;">04</span>
+            <div>
+              <div class="fw-bold font-display text-dark" style="font-size: 1.08rem; margin-bottom: 3px;">Pemeriksaan Kualitas &amp; Pengemasan</div>
+              <div class="text-muted" style="font-size: 0.96rem; line-height: 1.65;">Pembersihan sisa lem perekat, penyortiran produk jadi, dan pengemasan manual ikatan per kodi yang rapi dan siap didistribusikan.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 d-flex" data-aos="fade-left">
+        <div class="p-4 p-lg-5 border rounded-3 w-100 d-flex flex-column justify-content-between" style="background:#f8fafc; border-color:var(--compass-border) !important; box-shadow: 0 10px 30px rgba(0,0,0,0.04);">
+          <div>
+            <span class="editorial-subtitle mb-2 d-inline-block">Fasilitas</span>
+            <h3 class="font-display mb-3" style="font-size: clamp(1.45rem, 2.3vw, 1.85rem); font-weight: 800;">Fasilitas & Budaya Kerja</h3>
+            <p class="text-secondary" style="font-size: 1.05rem; line-height: 1.85;">
+              Sebagai unit usaha industri rumahan (<em>home industry</em>), <strong>UD. Hello Silvi</strong> mengoptimalkan tata ruang kerja yang terintegrasi antara area pemotongan bahan, meja penjahitan tali webbing, ruang perakitan pengeleman, dan gudang penyimpanan barang jadi.
+            </p>
+          </div>
+
+          <div class="row g-3 mt-4 pt-2">
+            <div class="col-sm-6">
+              <div class="border p-4 bg-white rounded-3 h-100" style="box-shadow: 0 4px 14px rgba(0,0,0,0.03);">
+                <div class="fw-bold font-display text-dark mb-2" style="font-size: 1.05rem;">
+                  <i class="bi bi-patch-check-fill text-success fs-5 me-1 align-middle"></i> Sortir Kualitas Manual
+                </div>
+                <div class="text-muted" style="font-size: 0.95rem; line-height: 1.65;">
+                  Setiap pasang sandal diperiksa secara langsung sebelum masuk tahap pengemasan.
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="border p-4 bg-white rounded-3 h-100" style="box-shadow: 0 4px 14px rgba(0,0,0,0.03);">
+                <div class="fw-bold font-display text-dark mb-2" style="font-size: 1.05rem;">
+                  <i class="bi bi-people-fill text-primary fs-5 me-1 align-middle"></i> Tenaga Kerja Lokal
+                </div>
+                <div class="text-muted" style="font-size: 0.95rem; line-height: 1.65;">
+                  Memberdayakan masyarakat Dusun Karang Bangkal sebagai pengrajin terampil.
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="border p-4 bg-white rounded-3 h-100" style="box-shadow: 0 4px 14px rgba(0,0,0,0.03);">
+                <div class="fw-bold font-display text-dark mb-2" style="font-size: 1.05rem;">
+                  <i class="bi bi-diagram-3-fill text-danger fs-5 me-1 align-middle"></i> Alur Kerja Efisien
+                </div>
+                <div class="text-muted" style="font-size: 0.95rem; line-height: 1.65;">
+                  Tata letak stasiun kerja terpadu memangkas durasi perpindahan material antar proses.
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="border p-4 bg-white rounded-3 h-100" style="box-shadow: 0 4px 14px rgba(0,0,0,0.03);">
+                <div class="fw-bold font-display text-dark mb-2" style="font-size: 1.05rem;">
+                  <i class="bi bi-boxes text-dark fs-5 me-1 align-middle"></i> Siap Distribusi Kodi
+                </div>
+                <div class="text-muted" style="font-size: 0.95rem; line-height: 1.65;">
+                  Standar ikatan kemasan rapi per kodi (20 pasang) dengan proteksi pengiriman aman.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     THE MAKERS & STRUCTURE (TIM PENGRAJIN)
+============================================ -->
+<section class="py-5 bg-white" id="makers" style="padding-top:80px !important; padding-bottom:80px !important; border-top:1px solid var(--compass-border);">
+  <div class="container">
+    <div class="d-flex flex-wrap justify-content-between align-items-end mb-5" data-aos="fade-up">
+      <div>
+        <span class="editorial-subtitle">04 - Manajemen & Pengrajin</span>
+        <h2 class="editorial-section-title mt-2">Struktur Tim &amp; Pengrajin</h2>
+      </div>
+      <div>
+        <span class="text-muted small">Tangan Terampil di Balik Setiap Pasang Sandal</span>
+      </div>
+    </div>
+
+    <!-- Bagan Struktur Organisasi Usaha -->
+    <div class="row mb-5" data-aos="fade-up">
+      <div class="col-12">
+        <div class="p-3 p-md-4 rounded-3 text-center" style="border: 1px solid var(--compass-border); background: #fafafa;">
+          <h3 class="editorial-section-title mb-4">Struktur Organisasi</h3>
+          <img src="assets/CERITA/STRUKTUR.png" alt="Bagan Struktur Organisasi UD. Hello Silvi" class="img-fluid rounded-2 shadow-sm d-block mx-auto" style="max-height: 520px; width: auto; object-fit: contain;">
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-6 col-md-3" data-aos="fade-up">
+        <div class="maker-card p-3">
+          <div class="ratio ratio-1x1 bg-light mb-3 overflow-hidden rounded-2">
+            <img src="assets/CERITA/ORANG.jpg" alt="Mashudi Prasetiyo" style="object-fit:cover;">
+          </div>
+          <div class="fw-bold font-display">Mashudi Prasetiyo</div>
+          <div class="small text-muted">Pemilik Usaha (Owner)</div>
+          <div class="small text-secondary mt-1">Penanggung jawab operasional &amp; relasi bisnis sejak 2007.</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="80">
+        <div class="maker-card p-3">
+          <div class="ratio ratio-1x1 bg-light mb-3 overflow-hidden rounded-2">
+            <img src="assets/CERITA/ORANG.jpg" alt="Bagian Produksi" style="object-fit:cover;">
+          </div>
+          <div class="fw-bold font-display">Bagian Produksi</div>
+          <div class="small text-muted">Supervisor Operasional</div>
+          <div class="small text-secondary mt-1">Pengaturan jadwal harian &amp; pengawasan persediaan bahan.</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="160">
+        <div class="maker-card p-3">
+          <div class="ratio ratio-1x1 bg-light mb-3 overflow-hidden rounded-2">
+            <img src="assets/CERITA/ORANG.jpg" alt="Pengrajin Pemotongan" style="object-fit:cover;">
+          </div>
+          <div class="fw-bold font-display">Tim Cutting &amp; Jahit</div>
+          <div class="small text-muted">Pengrajin Spon &amp; Webbing</div>
+          <div class="small text-secondary mt-1">Pemotongan pola pisau press dan penjahitan tali sandal.</div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="240">
+        <div class="maker-card p-3">
+          <div class="ratio ratio-1x1 bg-light mb-3 overflow-hidden rounded-2">
+            <img src="assets/CERITA/ORANG.jpg" alt="Tim Finishing" style="object-fit:cover;">
+          </div>
+          <div class="fw-bold font-display">Tim Finishing &amp; Pack</div>
+          <div class="small text-muted">Quality Control &amp; Logistik</div>
+          <div class="small text-secondary mt-1">Inspeksi akhir produk dan pengemasan rapi ikatan per kodi.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CONTACT & WORKSHOP LOCATION
+============================================ -->
+<section class="py-5 bg-white" id="contact" style="padding-top:80px !important; padding-bottom:80px !important; border-top:1px solid var(--compass-border);">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <span class="editorial-subtitle">05 - Hubungi Kami</span>
+        <h2 class="editorial-section-title mt-2 mb-4">Kunjungi Bengkel Produksi Kami</h2>
+        
+        <div class="mb-4">
+          <div class="fw-bold small">Alamat Workshop:</div>
+          <div class="text-secondary">Dusun Karang Bangkal RT.02 RW.04, Desa Karangrejo, Kecamatan Gempol, Kabupaten Pasuruan, Jawa Timur</div>
+        </div>
+
+        <div class="mb-4">
+          <div class="fw-bold small">Penanggung Jawab:</div>
+          <div class="text-secondary">Mashudi Prasetiyo (Pemilik Usaha)</div>
+        </div>
+
+        <div class="mb-4">
+          <div class="fw-bold small">WhatsApp &amp; Telepon:</div>
+          <div class="text-secondary">+62 812-3456-7890 / (0343) 851-XXXX</div>
+        </div>
+
+        <div class="mb-4">
+          <div class="fw-bold small">Jam Operasional:</div>
+          <div class="text-secondary">Senin &ndash; Sabtu : 08.00 &ndash; 17.00 WIB</div>
+        </div>
+
+        <!-- Peta Embed -->
+        <div class="ratio ratio-16x9 border overflow-hidden mt-3 rounded-3">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15822.463236081498!2d112.695!3d-7.605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7dc80a6b4b455%3A0x6b8bcfe0c4c47b52!2sKarang%20Rejo%2C%20Kec.%20Gempol%2C%20Pasuruan%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="border p-4 p-md-5 bg-light rounded-3">
+          <h4 class="font-display mb-3">Kirim Pesan atau Penawaran Harga</h4>
+          <p class="text-muted small mb-4">Silakan masukkan rincian kebutuhan sandal spon untuk toko, reseller, atau pesanan khusus Anda.</p>
+          
+          <form id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label small fw-bold" for="cf-name">Nama Anda / Nama Toko</label>
+                <input type="text" class="form-control rounded-2 border-dark" id="cf-name" placeholder="Misal: Toko Sejahtera" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label small fw-bold" for="cf-phone">Nomor WhatsApp</label>
+                <input type="tel" class="form-control rounded-2 border-dark" id="cf-phone" placeholder="08xxxxxxxxxx" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label small fw-bold" for="cf-subject">Kategori Produk &amp; Jumlah Kodi</label>
+                <input type="text" class="form-control rounded-2 border-dark" id="cf-subject" placeholder="Misal: Order 10 Kodi Sandal Spon Merk Kitty">
+              </div>
+              <div class="col-12">
+                <label class="form-label small fw-bold" for="cf-message">Rincian Pesanan / Alamat Pengiriman</label>
+                <textarea class="form-control rounded-2 border-dark" id="cf-message" rows="4" placeholder="Tuliskan ukuran nomor atau pertanyaan spesifik yang ingin disampaikan..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-compass-black w-100 justify-content-center py-2">
+                  <span>Kirim Pesan Penawaran</span> <i class="bi bi-send ms-2"></i>
+                </button>
+              </div>
+              <div class="col-12" id="formStatus" role="status" aria-live="polite"></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FOOTER
+============================================ -->
+<footer class="footer-compass">
+  <div class="container">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <a class="brand-logo-text text-white mb-3 d-inline-block" href="#home" style="color: #ffffff !important;">
+          UD. Hello Silvi <span class="brand-logo-badge bg-white text-dark ms-2">Est. 2007</span>
+        </a>
+        <p class="text-white-50 small mt-2" style="line-height:1.8;">
+          Industri alas kaki sandal spon rumahan yang berdedikasi menjaga kualitas material dan ketelitian tangan pengrajin lokal Pasuruan sejak 2007.
+        </p>
+        <div class="text-white-50 small mt-3">
+          &copy; 2026 UD. Hello Silvi. All rights reserved.
+        </div>
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-2">
+        <h6 class="text-white small fw-bold">Navigasi</h6>
+        <ul class="list-unstyled mt-3 small">
+          <li class="mb-2"><a href="#home">Beranda</a></li>
+          <li class="mb-2"><a href="#about">Profil Usaha</a></li>
+          <li class="mb-2"><a href="#products">Katalog Produk</a></li>
+          <li class="mb-2"><a href="#produksi">Proses Produksi</a></li>
+          <li class="mb-2"><a href="#makers">Struktur Tim</a></li>
+          <li class="mb-2"><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-3 col-lg-2">
+        <h6 class="text-white small fw-bold">Seri Produk</h6>
+        <ul class="list-unstyled mt-3 small">
+          <li class="mb-2"><a href="#products">Seri Kitty Classic</a></li>
+          <li class="mb-2"><a href="#products">Seri Kasual Monochrome</a></li>
+          <li class="mb-2"><a href="#products">Seri Junior Play</a></li>
+        </ul>
+      </div>
+
+      <div class="col-lg-4">
+        <h6 class="text-white small fw-bold">Studi Kasus Laporan</h6>
+        <div class="p-3 mt-3 border border-secondary rounded-2" style="background:#1a1a1a;">
+          <small class="text-white-50 d-block" style="font-size:0.75rem;">Laporan Kerja Praktik Analisis Persediaan:</small>
+          <strong class="text-white d-block mt-1">Silvia Oktaviana Efendi (2021810037)</strong>
+          <span class="text-white-50 small d-block">Program Studi Teknik Logistik</span>
+          <span class="text-white-50 small d-block">Universitas Internasional Semen Indonesia (UISI)</span>
+        </div>
+        <div class="mt-3 small text-white-50">
+          Laboratorium Analisis &amp; Perancangan Sistem Informasi (APSI)
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to Top -->
+<div id="scrollTop" role="button" aria-label="Scroll to top" tabindex="0">
+  <svg viewBox="0 0 52 52"><circle cx="26" cy="26" r="23"></circle><circle class="progress" cx="26" cy="26" r="23"></circle></svg>
+  <i class="bi bi-arrow-up"></i>
+</div>
+
+<!-- Bootstrap Bundle -->
+<script src="assets/bootstrap.bundle.min.js"></script>
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/script.js"></script>
+
+<!-- Script Kalkulator Grosir Interaktif & ScrollSpy Aktif -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    /* ---------- DYNAMIC SCROLLSPY (GARIS BAWAH NAVBAR BERPINDAH OTOMATIS) ---------- */
+    const navLinks = document.querySelectorAll('#navMenu .nav-link');
+    const trackedSections = [];
+
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      if (href && href.startsWith('#') && href.length > 1) {
+        const targetEl = document.querySelector(href);
+        if (targetEl) {
+          trackedSections.push({ href: href, el: targetEl, link: link });
+        }
+      }
+    });
+
+    function updateActiveNavbar() {
+      const scrollY = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const scrollBottom = scrollY + windowHeight;
+      const docHeight = document.documentElement.scrollHeight;
+      
+      // Jika di paling atas (Beranda)
+      if (scrollY < 180) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        if (trackedSections.length > 0) trackedSections[0].link.classList.add('active');
+        return;
+      }
+
+      // Jika di paling bawah (Kontak)
+      if (scrollBottom >= docHeight - 60) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        const contactSec = trackedSections.find(s => s.href === '#contact');
+        if (contactSec) contactSec.link.classList.add('active');
+        return;
+      }
+
+      // Deteksi section mana yang sedang terlihat
+      const checkPosition = scrollY + 160;
+      let activeItem = null;
+
+      for (let i = 0; i < trackedSections.length; i++) {
+        const sec = trackedSections[i];
+        const top = sec.el.offsetTop;
+        const height = sec.el.offsetHeight;
+
+        if (checkPosition >= top && checkPosition < top + height) {
+          activeItem = sec;
+          break;
+        }
+      }
+
+      if (activeItem) {
+        navLinks.forEach(l => l.classList.remove('active'));
+        activeItem.link.classList.add('active');
+      }
+    }
+
+    window.addEventListener('scroll', updateActiveNavbar, { passive: true });
+    window.addEventListener('resize', updateActiveNavbar);
+    // Jalankan sekali saat load
+    updateActiveNavbar();
+  });
+</script>
+
+</body>
+</html>
